@@ -39,7 +39,6 @@ export class CheckoutPage {
         await this.enterFirstName(firstname);
         await this.enterLastName(lastname);
         await this.enterPostalCode(postalcode);
-        await this.clickToContinue();
     }
 
     async clickToContinue() {

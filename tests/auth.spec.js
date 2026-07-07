@@ -4,11 +4,8 @@ import { LoginPage } from "../pages/LoginPage";
 test.describe('Authentication', () => {
 
     // Happy path — valid credentials should land the user on the inventory page
-    test('Valid user can log in', async({page}) => {
-        const login = new LoginPage(page);
-        await login.goto();
-        await login.login('standard_user', 'secret_sauce');
-        await expect(page).toHaveURL(/inventory/);  
+    test('Valid user can log in', async({loggedInPage}) => {
+        await expect(loggedInPage).toHaveURL(/inventory/);  
     });
 
     // Negative path — wrong password should show a credential mismatch error

@@ -9,7 +9,7 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: [
     ['html', { open: 'never' }],
-    ['list']
+    ['./utils/aiReporter.js']
   ],
   use: {
     baseURL: 'https://www.saucedemo.com',

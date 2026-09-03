@@ -4,6 +4,16 @@ A production-grade Playwright test automation framework for an e-commerce web ap
 
 ---
 
+## Test Automation Results
+
+- ✓ 16 automated test cases
+- ✓ Authentication, product & checkout coverage
+- ✓ Chromium / Firefox / Mobile
+- ✓ GitHub Actions CI/CD
+- ✓ HTML test reports
+- ✓ Screenshot & video on failure
+- ✓ AI-powered failure analysis
+
 ## 🚀 Features
 
 - **Page Object Model (POM)** — maintainable, scalable test architecture

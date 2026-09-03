@@ -1,6 +1,6 @@
-# ShopTest Pro 🧪
+# Shoptest Pro - Playwright E2E Test Automation Framework
 
-A production-grade Playwright test automation framework for an e-commerce web application, built with JavaScript and the Page Object Model design pattern. Features CI/CD integration via GitHub Actions and an AI-powered failure reporter that explains test failures in plain English.
+A production-style Playwright automation framework for testing an e-commerce web application, demonstrating maintainable test architecture, Page Object Model, cross-browser testing, CI/CD integration, automated reporting, and failure analysis.
 
 ---
 
@@ -14,6 +14,8 @@ A production-grade Playwright test automation framework for an e-commerce web ap
 - ✓ Screenshot & video on failure
 - ✓ AI-powered failure analysis
 
+---
+
 ## 🚀 Features
 
 - **Page Object Model (POM)** — maintainable, scalable test architecture
@@ -23,6 +25,22 @@ A production-grade Playwright test automation framework for an e-commerce web ap
 - **AI-powered failure reporter** — failed tests generate plain-English summaries using the Gemini API
 - **HTML test reports** — uploaded as downloadable artifacts after every CI run
 - **Screenshot & video capture** — automatically saved on test failure
+
+---
+
+## 💼 What I Can Help With
+
+I can help teams improve their web application testing through reliable Playwright automation.
+
+- Build Playwright E2E automation frameworks
+- Convert manual test cases into automated tests
+- Automate critical user workflows
+- Create maintainable Page Object Models
+- Debug and fix failing or flaky Playwright tests
+- Set up Playwright tests in CI/CD pipelines
+- Perform cross-browser testing
+- Generate automated HTML test reports
+- Maintain and expand existing Playwright test suites
 
 ---
 

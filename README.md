@@ -14,10 +14,18 @@ A production-style Playwright automation framework for testing an e-commerce web
 - ✓ Screenshot & video on failure
 - ✓ AI-powered failure analysis
 
-The test suite executes 16 test scenarios across Chromium, Firefox,
-and mobile configurations, resulting in 48 automated test executions.
+The test suite executes 16 test scenarios across Chromium, Firefox, and mobile configurations, resulting in 48 automated test executions.
+
+### Playwright HTML Report
 
 ![Playwright HTML Test Report](./docs/images/playwright-report.png)
+
+### GitHub Actions CI/CD
+
+The test suite is automatically executed through GitHub Actions, with Playwright browsers installed in the CI environment and test reports uploaded as workflow artifacts.
+
+![GitHub Actions CI/CD](./docs/images/github-actions.png)
+
 
 ---
 
@@ -65,27 +73,38 @@ I can help teams improve their web application testing through reliable Playwrig
 ## 📁 Project Structure
 
 shoptest-pro/
+│
 ├── .github/
-│ └── workflows/
-│ └── playwright.yml # CI/CD pipeline — runs on every push
-├── docs
-│   └── images
-│       └── playwright-report.png
+│   └── workflows/
+│       └── playwright.yml          # CI/CD pipeline — runs on every push
+│
+├── docs/
+│   └── images/
+│       ├── playwright-report.png   # Playwright HTML report screenshot
+│       └── github-actions.png      # GitHub Actions CI/CD screenshot
+│
 ├── fixtures/
-│ └── auth.fixture.js # Reusable login fixture for authenticated tests
+│   └── auth.fixture.js             # Reusable login fixture
+│
 ├── pages/
-│ ├── LoginPage.js # Login page — locators and actions
-│ ├── InventoryPage.js # Product listing page — locators and actions
-│ ├── CartPage.js # Cart page — locators and actions
-│ └── CheckoutPage.js # Checkout flow — locators and actions
+│   ├── LoginPage.js                # Login page — locators and actions
+│   ├── InventoryPage.js            # Product listing — locators and actions
+│   ├── CartPage.js                 # Cart page — locators and actions
+│   └── CheckoutPage.js             # Checkout flow — locators and actions
+│
 ├── tests/
-│ ├── auth.spec.js # Authentication test suite (6 tests)
-│ ├── products.spec.js # Product listing and sorting tests (6 tests)
-│ └── checkout.spec.js # End-to-end checkout flow tests (4 tests)
+│   ├── auth.spec.js                # Authentication tests (6 tests)
+│   ├── products.spec.js            # Product/sorting tests (6 tests)
+│   └── checkout.spec.js            # Checkout tests (4 tests)
+│
 ├── utils/
-│ └── aiReporter.js # Custom Playwright reporter with AI failure analysis
-├── .env.example # Example environment variables
-├── playwright.config.js # Playwright configuration
+│   └── aiReporter.js               # Custom reporter with AI failure analysis
+│
+├── .env.example                    # Example environment variables
+├── playwright.config.js            # Playwright configuration
+├── package.json
+├── package-lock.json
+├── .gitignore
 └── README.md
 
 ---

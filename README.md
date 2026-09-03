@@ -14,6 +14,11 @@ A production-style Playwright automation framework for testing an e-commerce web
 - ✓ Screenshot & video on failure
 - ✓ AI-powered failure analysis
 
+The test suite executes 16 test scenarios across Chromium, Firefox,
+and mobile configurations, resulting in 48 automated test executions.
+
+![Playwright HTML Test Report](./docs/images/playwright-report.png)
+
 ---
 
 ## 🚀 Features
@@ -63,6 +68,9 @@ shoptest-pro/
 ├── .github/
 │ └── workflows/
 │ └── playwright.yml # CI/CD pipeline — runs on every push
+├── docs
+│   └── images
+│       └── playwright-report.png
 ├── fixtures/
 │ └── auth.fixture.js # Reusable login fixture for authenticated tests
 ├── pages/
